@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import FestWish from './components/FestWish';
+import FestWishes from './components/FestWishes';
 
 function App() {
   return (
     <div className="App">
-      <FestWish></FestWish>
+      <FestWishes></FestWishes>
     </div>
   );
 }

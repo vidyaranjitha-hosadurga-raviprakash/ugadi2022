@@ -1,62 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=Lavishly Yours&display=swap');
-body {
-    color:white;
-    /* font-family: 'Rubik Moonrocks'; */
-    font-family: Lavishly Yours;
+/* Components CSS */
+
+.wishcard-video-bg {
+  display:block;
+  margin:auto;
+  width:100%;
+  min-height: 150%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
+
 .wishcard-container {
-    display: block;
-    margin:auto;
-    margin-top:13rem;
-    width:50rem;
-    text-align:center;
-  }
+  display: block;
+  margin:auto;
+  margin-top:13rem;
+  width:51rem;
+  text-align:center;
+}
 
-  .wishcard-msg{
-    display: flexbox;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 1rem;
-    background: #068449d8;
-  }
+.wishcard-msg{
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 1rem;
+  background: rgba(6, 132, 73, 0.75);
+}
 
-  .wishcard-kannada {
-    font-size: 2.1rem;
-    font-weight: 900;   
-  }
-  .wishcard-english {
-      padding:0.5rem 0.5rem;
-      font-size: 1.5rem;
-      font-weight: 800;
-  }
+.wishcard-kannada {
+  font-size: 2rem !important;
+  font-weight: 900 !important;   
+}
+.wishcard-english {
+  padding:0.5rem 0.5rem;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+}
 
-  .wishcard-footer{
-      display: flexbox;
-      flex-direction: column;
-      position:relative;
-      margin:auto;
-      margin-top:14rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      font-size:1.5rem;
-      background: rgba(5, 17, 30, 0.833);
-      width:fit-content;
-      border-radius:1rem;
-      padding:0.2rem 0.5rem;
+.wishcard-footer{
+  display: flexbox;
+  flex-direction: column;
+  position:relative;
+  margin:auto;
+  margin-top:12rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size:1.5rem;
+  background: rgba(5, 17, 30, 0.833);
+  width:fit-content;
+  border-radius:1rem;
+  padding:0.2rem 0.5rem;
       
   }
 
-  .wishcard-video-bg {
-    display:block;
-    margin:auto;
-    width:100%;
-    min-height: 150px;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+  
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .wishcard-video-bg {
+      display:block;
+      margin:auto;
+      width:50rem;
+      height: 15rem;
+      object-fit:calc(40);
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .wishcard-container {
+        width: 90%;
+    }
+    .wishcard-kannada{
+      font-size: 1rem !important;
+      font-weight: 300;      
+    }
+    .wishcard-english{
+      font-size: 0.8rem !important;
+      font-weight: 350;      
+    }
+    .wishcard-footer{
+      margin-top:23rem;
+    }
   }
